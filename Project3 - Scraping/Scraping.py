@@ -25,9 +25,9 @@ for div in divs:
     b = div.find('h3').text.strip()
     tab.append(b)
 
-with open('args.file', 'w', encoding='utf-8') as f:
+with open(args.file, 'w', encoding='utf-8') as f:
     json.dump(tab, f)
 
-with open('args.file', 'r', encoding='utf-8') as f:
+with open(args.file, 'r', encoding='utf-8') as f:
     y = json.load(f)
     console.print(y)
